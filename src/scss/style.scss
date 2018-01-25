@@ -1,0 +1,8 @@
+body {
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 800px;
+}
+
+@import '../components/Heading/Heading.scss';
+@import '../components/Footer/Footer.scss';
