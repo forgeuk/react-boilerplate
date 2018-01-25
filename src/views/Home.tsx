@@ -2,25 +2,28 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import { Heading } from '../components';
+import { Heading, Logo } from '../components';
 
 class View extends React.Component {
   render() {
     return (
       <section>
         <Helmet title="Home" />
-        <Heading>Welcome</Heading>
+        <Logo />
+        <Heading>React Boilerplate</Heading>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Soluta suscipit natus temporibus neque. Ut ipsum earum
-          dolorum reprehenderit consectetur sapiente, illo ab, similique
-          maiores quam odio illum nam incidunt laboriosam.
+          Congratulations, you got the React Boilerplate running!
         </p>
         <p>
           <Link to="/example">Take me to another page</Link>.
         </p>
         <p>
           <Link to="/example-error">Take me to page that doesn't exist</Link>.
+        </p>
+        <p>
+          <a href="https://git.digital-results.com/resources/react-boilerplate">
+            View source code
+          </a>.
         </p>
       </section>
     );

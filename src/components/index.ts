@@ -1,7 +1,9 @@
-import Heading from './Heading/Heading';
 import Footer from './Footer/Footer';
+import Heading from './Heading/Heading';
+import Logo from './Logo/Logo';
 
 export {
-  Heading,
   Footer,
+  Heading,
+  Logo,
 };
