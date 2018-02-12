@@ -8,7 +8,11 @@ interface Props {
 class Heading extends React.Component<Props> {
   render() {
     return (
-      <h1 className={`heading ${this.props.className !== undefined ? this.props.className : ''}`}>
+      <h1
+        className={`heading ${
+          this.props.className !== undefined ? this.props.className : ''
+        }`}
+      >
         {this.props.children}
       </h1>
     );

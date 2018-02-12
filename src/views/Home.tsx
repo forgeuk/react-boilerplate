@@ -11,9 +11,7 @@ class View extends React.Component {
         <Helmet title="Home" />
         <Logo />
         <Heading>React Boilerplate</Heading>
-        <p>
-          Congratulations, you got the React Boilerplate running!
-        </p>
+        <p>Congratulations, you got the React Boilerplate running!</p>
         <p>
           <Link to="/example">Take me to another page</Link>.
         </p>

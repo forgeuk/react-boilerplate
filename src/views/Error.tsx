@@ -8,9 +8,7 @@ class View extends React.Component {
       <section>
         <Helmet title="Error!" />
         <h1>Error</h1>
-        <p>
-          Unfortunately, that page cannot be found.
-        </p>
+        <p>Unfortunately, that page cannot be found.</p>
         <p>
           <Link to="/">Go back home</Link>.
         </p>
