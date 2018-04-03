@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
  * Webpack Production Configuration
  */
 module.exports = {
+  mode: 'production',
   devtool: 'source-map',
   entry: `${path.resolve(__dirname, './src')}/index.tsx`,
   output: {
@@ -24,19 +25,19 @@ module.exports = {
     }),
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.tsx?$/,
         enforce: 'pre',
-        loader: 'tslint-loader',
+        use: 'tslint-loader',
       },
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
+        use: 'ts-loader',
       },
       {
         test: /\.s(a|c)ss$/,
-        loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.(pdf|ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
@@ -45,7 +46,7 @@ module.exports = {
           name: 'assets/[name].[hash:8].[ext]',
         },
       },
-    ]
+    ],
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
