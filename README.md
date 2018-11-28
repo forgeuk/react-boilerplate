@@ -34,7 +34,7 @@ Route components can be found inside `src/views` and are defined like normal Rea
 
 ## 🔗 Linking to Routes
 
-You cannot use `<a href="">` tags to link to internal pages - you need to make use of the `<Link/>` component that _React Router_ provides.
+You cannot use `<a href="">` tags to link to internal pages, as this will reload the application - you need to make use of the `<Link/>` component that _React Router_ provides.
 
 If you are looking for a link that adds styling attributes to itself when it matches the current URL, look into the `<Navlink/>` component.
 
