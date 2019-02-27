@@ -64,3 +64,11 @@ Assets in production get a hash appended on at the end, so you don't have to wor
 Global styles can be found inside `src/scss`, and individual component styles should be placed inside respective component folders. You can then `@import` these into your master `style.scss`.
 
 Styles are autoprefixed automatically.
+
+---
+
+**Boilerplate developed by [Forge](https://forge.uk), a digital marketing and development agency based in Central London.**
+
+Working with amazing companies around the world, we craft digital experiences that are designed to help businesses grow. Our expert team of software developers, designers, marketers and strategists work together to build bespoke digital solutions for our vast range of clients.
+
+Got an idea? Need some help? Send us a message and kick off a conversation.
